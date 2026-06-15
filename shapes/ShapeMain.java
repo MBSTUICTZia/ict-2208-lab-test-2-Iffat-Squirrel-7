@@ -19,7 +19,7 @@ public class ShapeMain {
                 System.out.println(rect);
                 System.out.println();
                 System.out.println("--- Downcast Check ---");
-                System.out.println("Rectangle width=" + rect.getWidth() + " length=" + rect.getLength());
+                System.out.print("Rectangle width=" + rect.getWidth() + " length=" + rect.getLength());
                 
             } else if (type.equalsIgnoreCase("circle")) {
                 double radius = sc.nextDouble();
@@ -28,7 +28,7 @@ public class ShapeMain {
                 System.out.println(circ);
                 System.out.println();
                 System.out.println("--- Downcast Check ---");
-                System.out.println("Circle radius=" + circ.getRadius());
+                System.out.print("Circle radius=" + circ.getRadius());
             }
         }
         sc.close();
