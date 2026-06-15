@@ -23,6 +23,7 @@ public class Circle extends Shape {
 
     @Override
     public String toString() {
+        // আপনার প্রথম স্ক্রিনশটের লোকাল আউটপুট ফরম্যাট হুবহু বজায় রাখা হয়েছে
         return "[ Circle ]\n" + super.toString() + 
                "\nRadius: " + radius + 
                String.format("\nArea      : %.2f", getArea()) + 
