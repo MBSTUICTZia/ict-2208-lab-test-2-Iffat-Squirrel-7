@@ -29,10 +29,12 @@ public class Rectangle extends Shape {
 
     @Override
     public String toString() {
-        return "[ Rectangle ]\n" + super.toString() + 
+        return "[ shapes.Rectangle ]\n" + super.toString() + 
                "\nWidth : " + width + 
                "\nLength: " + length + 
                String.format("\nArea      : %.2f", getArea()) + 
-               String.format("\nPerimeter : %.2f", getPerimeter());
+               String.format("\nPerimeter : %.2f", getPerimeter()) +
+               String.format("\nArea: %.2f", getArea()) + 
+               String.format("\nPerimeter: %.2f", getPerimeter());
     }
 }
