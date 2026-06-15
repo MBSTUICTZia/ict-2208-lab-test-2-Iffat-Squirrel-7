@@ -1,6 +1,7 @@
 package shapes;
 
 public class Circle extends Shape {
+
     private double radius;
 
     public Circle(String color, boolean filled, double radius) {
@@ -8,25 +9,24 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
-    public double getRadius() {
-        return radius;
-    }
-
     @Override
     public double getArea() {
         return Math.PI * radius * radius;
     }
 
-    public double getCircumference() {
+    @Override
+    public double getPerimeter() {
         return 2 * Math.PI * radius;
     }
 
     @Override
     public String toString() {
-        // আপনার প্রথম স্ক্রিনশটের লোকাল আউটপুট ফরম্যাট হুবহু বজায় রাখা হয়েছে
-        return "[ Circle ]\n" + super.toString() + 
-               "\nRadius: " + radius + 
-               String.format("\nArea      : %.2f", getArea()) + 
-               String.format("\nCircumference: %.2f", getCircumference());
+        return "[ Circle ]\n" +
+                super.toString() + "\n" +
+                "Radius: " + radius + "\n" +
+                String.format("Area         : %.2f", getArea())      + "\n" +
+                String.format("Circumference: %.2f", getPerimeter());
     }
+
+    public double getRadius() { return radius; }
 }
