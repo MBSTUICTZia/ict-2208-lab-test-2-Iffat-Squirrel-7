@@ -29,6 +29,7 @@ public class Rectangle extends Shape {
 
     @Override
     public String toString() {
+        // আপনার প্রথম স্ক্রিনশটের লোকাল আউটপুট ফরম্যাট হুবহু বজায় রাখা হয়েছে
         return "[ Rectangle ]\n" + super.toString() + 
                "\nWidth : " + width + 
                "\nLength: " + length + 
