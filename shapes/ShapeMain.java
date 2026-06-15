@@ -17,18 +17,12 @@ public class ShapeMain {
                 
                 Rectangle rect = new Rectangle(color, filled, width, length);
                 System.out.println(rect);
-                System.out.println();
-                System.out.println("--- Downcast Check ---");
-                System.out.print("Rectangle width=" + rect.getWidth() + " length=" + rect.getLength());
                 
             } else if (type.equalsIgnoreCase("circle")) {
                 double radius = sc.nextDouble();
                 
                 Circle circ = new Circle(color, filled, radius);
                 System.out.println(circ);
-                System.out.println();
-                System.out.println("--- Downcast Check ---");
-                System.out.print("Circle radius=" + circ.getRadius());
             }
         }
         sc.close();
