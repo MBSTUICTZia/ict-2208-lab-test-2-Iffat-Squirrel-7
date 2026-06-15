@@ -23,9 +23,11 @@ public class Circle extends Shape {
 
     @Override
     public String toString() {
-        return "[ Circle ]\n" + super.toString() + 
+        return "[ shapes.Circle ]\n" + super.toString() + 
                "\nRadius: " + radius + 
                String.format("\nArea      : %.2f", getArea()) + 
+               String.format("\nCircumference: %.2f", getCircumference()) +
+               String.format("\nArea: %.2f", getArea()) + 
                String.format("\nCircumference: %.2f", getCircumference());
     }
 }
